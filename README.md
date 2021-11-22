@@ -14,9 +14,13 @@ Projek ini adalah projek dari mata kuliah praktikum PBO yang bertujuan untuk mem
 | 140810200050  | Fikri Arkani Salim |
 
 ## Change log
-- **[Sprint Planning](changelog/sprint-planning.md) - (planning date)** 
+- **[Sprint Planning](changelog/sprint-planning.md) - (22/11/2021)** 
    - Isi nama Kelompok 
    - Isi Tanggal
+   - Isi Sprint Keseluruhan
+   - Isi Sprint 1
+   - Isi Sprint 2
+   - Isi Sprint 3
 
 - **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
    - Short changes 1
