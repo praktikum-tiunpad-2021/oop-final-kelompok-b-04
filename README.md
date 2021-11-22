@@ -1,4 +1,4 @@
-# Project Name
+# 15 Puzzle
 
 This repository is a final project (Java GUI) from Object-Oriented Programming Class, Teknik Informatika Universitas Padjadjaran. 
 
@@ -15,8 +15,8 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 ## Change log
 - **[Sprint Planning](changelog/sprint-planning.md) - (planning date)** 
-   -  Short changes 1
-   - Short changes 2
+   - Isi nama Kelompok 
+   - Isi Tanggal
 
 - **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
    - Short changes 1
