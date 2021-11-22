@@ -4,7 +4,7 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 [Challenge Guidelines](challenge-guideline.md)
 
-**Please create a description for this project here**
+Projek ini adalah projek dari mata kuliah praktikum PBO yang bertujuan untuk membuat program aplikasi permainan 15 Puzzle dengan menggunakan teknik Pemrograman Berbasis Objek berbasis bahasa pemrograman JAVA
 
 ## Credits
 | NPM           | Name        |
