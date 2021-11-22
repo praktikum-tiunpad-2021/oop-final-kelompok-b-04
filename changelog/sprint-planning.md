@@ -11,30 +11,30 @@
 ## Sprint Backlog Keseluruhan 
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 1.1 | Preparing the x | Jane Doe | 
-| 1.2 | Make the x | John Doe |
-| 2.1 | Preparing the x | Jane Doe | 
-| 2.2 | Make the x | John Doe | 
-| 3.1 | Preparing the x | Jane Doe | 
-| 3.2 | Make the x | John Doe | 
+| 1.1 | Mempersiapkan Logic dari 15 Puzzle | Daffa | 
+| 1.2 | Implementasi Logic dari 15 Puzzle | Muaz |
+| 2.1 | Mempersiapkan Movement dari "Tile" 15 Puzzle | Fikri| 
+| 2.2 | Implementasi Movement dari "Tile" 15 Puzzle  | Daffa | 
+| 3.1 | Mempersiapkan UI dan Event Handler dari User 15 Puzzle | Muaz | 
+| 3.2 | Implementasi UI dan Event Handler dari User 15 Puzzle  | Fikri | 
 
 ## Sprint Backlog Plan (Sprint 1)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 1.1 | Preparing the x | Jane Doe | 
-| 1.2 | Make the x | John Doe | 
+| 1.1 | Mempersiapkan Logic dari 15 Puzzle | Daffa | 
+| 1.2 | Implementasi Logic dari 15 Puzzle | Muaz |
 
 ## Sprint Backlog Plan (Sprint 2)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 2.1 | Preparing the x | Jane Doe | 
-| 2.2 | Make the x | John Doe | 
+| 2.1 | Mempersiapkan Movement dari "Tile" 15 Puzzle | Fikri| 
+| 2.2 | Implementasi Movement dari "Tile" 15 Puzzle  | Daffa | 
 
 ## Sprint Backlog Plan (Sprint 3)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 3.1 | Preparing the x | Jane Doe | 
-| 3.2 | Make the x | John Doe | 
+| 3.1 | Mempersiapkan UI dan Event Handler dari User 15 Puzzle | Muaz | 
+| 3.2 | Implementasi UI dan Event Handler dari User 15 Puzzle  | Fikri | 
 
 ## Retrospective 
 
