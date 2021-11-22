@@ -1,24 +1,24 @@
 # Scrum Report (Sprint 1)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 18/11/2021 to 23/11/2021
 
 ## Team (Insert your name)
 | NPM           | Name        |
 | ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| 140810200016  | Muhammad Daffa Alifiandi   |
+| 140810200026  | Mu'az Abdul Rohim    |
+| 140810200050  | Fikri Arkani Salim|
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 2             | -             |
 
 ## Sprint 1 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 1.1 | Preparing the x | Jane Doe | DONE |
-| 1.2 | Make the x | John Doe | FAILED |
+| 1.1 | Mempersiapkan Logic dari 15 Puzzle | Daffa |  - |
+| 1.2 | Implementasi Logic dari 15 Puzzle |  - |
 
 ## Retrospective 
 
@@ -27,5 +27,5 @@ Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian t
 ## Next Sprint Backlog (Sprint 2)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 2.1 | Preparing the x | Jane Doe | 
-| 2.2 | Make the x | John Doe | 
+| 2.1 | Mempersiapkan Movement dari "Tile" 15 Puzzle | Fikri| 
+| 2.2 | Implementasi Movement dari "Tile" 15 Puzzle  | Daffa | 
