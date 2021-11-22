@@ -12,7 +12,11 @@
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
 | 1.1 | Preparing the x | Jane Doe | 
+| 1.2 | Make the x | John Doe |
+| 2.1 | Preparing the x | Jane Doe | 
 | 2.2 | Make the x | John Doe | 
+| 3.1 | Preparing the x | Jane Doe | 
+| 3.2 | Make the x | John Doe | 
 
 ## Sprint Backlog Plan (Sprint 1)
 | ID  | Title/Desc | Asignee | 
