@@ -22,9 +22,12 @@ Projek ini adalah projek dari mata kuliah praktikum PBO yang bertujuan untuk mem
    - Isi Sprint 2
    - Isi Sprint 3
 
-- **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
+- **[Sprint 1](changelog/sprint-1.md) - (18/11/2021 until 23/11/2021)** 
+   - Isi nama Kelompok 
+   - Isi Tanggal
+   - Isi Sprint Overview
+   - Isi Sprint 1 backlog
+   - Isi next Sprint backlog
 
 - **[Sprint 2](changelog/sprint-2.md) - (date from x until x)** 
    - Short changes 1
