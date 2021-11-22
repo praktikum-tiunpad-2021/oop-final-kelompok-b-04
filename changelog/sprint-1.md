@@ -18,7 +18,7 @@
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
 | 1.1 | Mempersiapkan Logic dari 15 Puzzle | Daffa |  - |
-| 1.2 | Implementasi Logic dari 15 Puzzle |  - |
+| 1.2 | Implementasi Logic dari 15 Puzzle |  muaz | - |
 
 ## Retrospective 
 
