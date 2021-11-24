@@ -11,18 +11,18 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 2             | -             |
+| 2             | 2             |
 
 ## Sprint 1 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 1.1 | Mempersiapkan Logic dari 15 Puzzle | Daffa |  - |
-| 1.2 | Implementasi Logic dari 15 Puzzle |  muaz | - |
+| 1.1 | Mempersiapkan Logic dari 15 Puzzle | Daffa |  1 |
+| 1.2 | Implementasi Logic dari 15 Puzzle |  muaz | 1 |
 
 ## Retrospective 
-
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+K
+Sprint kemarin berjalan lancar walaupun hanya logic yang dikerjakan. masih sedikit, karena masih exploring tentang framework gradle dan GUInya
 
 ## Next Sprint Backlog (Sprint 2)
 | ID  | Title/Desc | Asignee | 
