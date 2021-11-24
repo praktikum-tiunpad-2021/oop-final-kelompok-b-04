@@ -38,4 +38,4 @@
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+Sprint planning kemarin berjalan lancar. sprint dibagi menjadi 3 bagian yang akan dikerjakan tiap minggu. sprint planning berkemungkinan belum matang, karena masih awal - awal exploring dan mempelajari logic 
