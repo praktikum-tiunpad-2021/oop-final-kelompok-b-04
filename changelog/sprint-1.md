@@ -17,11 +17,10 @@
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 1.1 | Mempersiapkan Logic dari 15 Puzzle | Daffa |  1 |
-| 1.2 | Implementasi Logic dari 15 Puzzle |  muaz | 1 |
+| 1.1 | Mempersiapkan Logic dari 15 Puzzle | Daffa |  DONE |
+| 1.2 | Implementasi Logic dari 15 Puzzle |  muaz | DONE |
 
 ## Retrospective 
-K
 Sprint kemarin berjalan lancar walaupun hanya logic yang dikerjakan. masih sedikit, karena masih exploring tentang framework gradle dan GUInya
 
 ## Next Sprint Backlog (Sprint 2)
