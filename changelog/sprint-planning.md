@@ -38,4 +38,4 @@
 
 ## Retrospective 
 
-Sprint planning kemarin berjalan lancar. sprint dibagi menjadi 3 bagian yang akan dikerjakan tiap minggu. sprint planning berkemungkinan belum matang, karena masih awal - awal exploring dan mempelajari logic 
+Sprint planning kemarin berjalan lancar. sprint dibagi menjadi 3 bagian yang akan dikerjakan tiap minggu. sprint planning berkemungkinan belum matang, karena masih awal - awal exploring dan mempelajari tentang pembuatan puzzle 15
