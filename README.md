@@ -29,7 +29,7 @@ Projek ini adalah projek dari mata kuliah praktikum PBO yang bertujuan untuk mem
    - Isi Sprint 1 backlog
    - Isi next Sprint backlog
 
-- **[Sprint 2](changelog/sprint-2.md) - (date from 24/11/2021 until 29/11/2021)** 
+- **[Sprint 2](changelog/sprint-2.md) - (date from 24/11/2021 until 30/11/2021)** 
    - Short changes 1
    - Short changes 2
    
