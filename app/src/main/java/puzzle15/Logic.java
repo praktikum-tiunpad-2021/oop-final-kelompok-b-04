@@ -1,84 +1,122 @@
 package puzzle15;
 
-import java.awt.Color;
-import java.util.Random;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Logic {
-    private int size;
+    private ArrayList<ArrayList<Integer>> grid;
+    private int blankX;
+    private int blankY;
     private int dimension;
-    private static final Color FOREGROUND_COLOR = new Color(239, 83, 80);
-    private static final Random RANDOM = new Random();
-    private int[] tiles;
-    private int tileSize;
-    private int nbTiles;
-    private int blankPos;
-    private int margin;
-    private int gridSize;
-    private boolean gameOver;
 
-    public Logic() {
-        this.size = 0;
-        this.dimension = 0;
-        this.tiles = new int[size * size];
-        this.tileSize = 0;
-        this.blankPos = 0;
-        this.margin = 0;
-        this.gridSize = 0;
-        this.gameOver = false;
-
+    public Logic(int dimension) {
+        this.dimension = dimension;
+        this.grid = new ArrayList<ArrayList<Integer>>(this.dimension);
+        this.createGrid();
+        this.shuffle();
     }
 
-    private void newGame() {
-        do {
-            reset();
-            shuffle();
-        } while (!isSolvable());
-
-        gameOver = false;
-    }
-
-    private void reset() {
-        for (int i = 0; i < tiles.length; i++) {
-            tiles[i] = (i + 1) % tiles.length;
+    public void createGrid() {
+        for (int i = 0; i < this.dimension; i++) {
+            ArrayList<Integer> temp = new ArrayList<Integer>(this.dimension);
+            for (int j = 0; j < this.dimension; j++) {
+                temp.add((i * this.dimension) + j);
+            }
+            this.grid.add(temp);
         }
-
-        blankPos = tiles.length - 1;
+        this.blankX = 0;
+        this.blankY = 0;
     }
 
-    private void shuffle() {
-
-        int n = nbTiles;
-
-        while (n > 1) {
-            int r = RANDOM.nextInt(n--);
-            int tmp = tiles[r];
-            tiles[r] = tiles[n];
-            tiles[n] = tmp;
-        }
-    }
-
-    private boolean isSolvable() {
-        int countInversions = 0;
-
-        for (int i = 0; i < nbTiles; i++) {
-            for (int j = 0; j < i; j++) {
-                if (tiles[j] > tiles[i])
-                    countInversions++;
+    public void shuffle() {
+        ArrayList<Integer> arr = new ArrayList<Integer>(this.dimension * this.dimension);
+        for (int i = 0; i < this.dimension; i++) {
+            for (int j = 0; j < this.dimension; j++) {
+                arr.add(this.grid.get(i).get(j));
             }
         }
-
-        return countInversions % 2 == 0;
+        do {
+            Collections.shuffle(arr);
+            this.blankX = arr.indexOf(0) / this.dimension;
+            this.blankY = arr.indexOf(0) % this.dimension;
+        } while (!this.isSolvable(arr));
+        this.grid.clear();
+        for (int i = 0; i < this.dimension; i++) {
+            ArrayList<Integer> temp = new ArrayList<Integer>(this.dimension);
+            for (int j = 0; j < this.dimension; j++) {
+                temp.add(arr.get((i * this.dimension) + j));
+            }
+            this.grid.add(temp);
+        }
     }
 
-    private boolean isSolved() {
-        if (tiles[tiles.length - 1] != 0)
+    public void moveUp() {
+        this.grid.get(this.blankX).set(this.blankY, this.grid.get(this.blankX - 1).get(this.blankY));
+        this.grid.get(this.blankX - 1).set(this.blankY, 0);
+        this.blankX--;
+    }
+
+    public void moveDown() {
+        this.grid.get(this.blankX).set(this.blankY, this.grid.get(this.blankX + 1).get(this.blankY));
+        this.grid.get(this.blankX + 1).set(this.blankY, 0);
+        this.blankX++;
+    }
+
+    public void moveRight() {
+        this.grid.get(this.blankX).set(this.blankY, this.grid.get(this.blankX).get(this.blankY + 1));
+        this.grid.get(this.blankX).set(this.blankY + 1, 0);
+        this.blankY++;
+    }
+
+    public void moveLeft() {
+        this.grid.get(this.blankX).set(this.blankY, this.grid.get(this.blankX).get(this.blankY - 1));
+        this.grid.get(this.blankX).set(this.blankY - 1, 0);
+        this.blankY--;
+    }
+
+    public Integer getGridElem(int x, int y) {
+        return this.grid.get(x).get(y);
+    }
+
+    public Integer getBlankX() {
+        return this.blankX;
+    }
+
+    public Integer getBlankY() {
+        return this.blankY;
+    }
+
+    public boolean isSolved() {
+        if (this.grid.get(this.dimension - 1).get(this.dimension - 1).intValue() != 0) {
             return false;
-
-        for (int i = nbTiles - 1; i >= 0; i--) {
-            if (tiles[i] != i + 1)
-                return false;
         }
-
+        for (int i = 0; i < this.dimension; i++) {
+            for (int j = 0; j < this.dimension; j++) {
+                if (this.grid.get(i).get(j).intValue() != (i * this.dimension) + j) {
+                    return false;
+                }
+            }
+        }
         return true;
     }
+
+    private boolean isSolvable(ArrayList<Integer> arr) {
+        int countInversions = 0;
+        for (int i = 0; i < arr.size() - 1; i++) {
+            if (arr.get(i).intValue() > arr.get(i + 1).intValue()) {
+                countInversions++;
+            }
+        }
+        if (this.dimension % 2 != 0 && countInversions % 2 == 0) {
+            return true;
+        } else if (this.dimension % 2 == 0) {
+            if (this.dimension - this.blankX + 1 % 2 == 0 && countInversions % 2 != 0) {
+                return true;
+            } else if ((this.dimension - this.blankX + 1 % 2 != 0) && countInversions % 2 == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
