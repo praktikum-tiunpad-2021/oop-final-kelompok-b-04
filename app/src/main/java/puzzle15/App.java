@@ -12,10 +12,8 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 
 public class App extends Application {
-	static int lvl = 1;
 	static boolean win = false;
 	Label moves = new Label("Moves: 0");
-	Label level = new Label();
 	int nMoves = 1;
 	static int puzzleSize = 4;
 
@@ -30,10 +28,6 @@ public class App extends Application {
 		Button newGame = new Button("Reset");
 		newGame.setPrefHeight(30);
 		newGame.setPrefWidth(100);// 80
-
-		Button restartLevel = new Button("Restart Level");
-		restartLevel.setPrefHeight(30);
-		restartLevel.setPrefWidth(106);// 85
 
 		Button quit = new Button("Quit");
 		quit.setPrefHeight(30);
@@ -55,31 +49,23 @@ public class App extends Application {
 			}
 
 		GeneratePuzzle(arr, lg);
-		newGame.setOnAction(e -> {
-			if (!win) {
-				lvl = 1;
-				GeneratePuzzle(arr, lg);
-			}
-		});
 
-		restartLevel.setOnAction(e -> {
-			if (!win)
-				GeneratePuzzle(arr, lg);
-		});
+
+		newGame.setOnAction(e -> GeneratePuzzle(arr, lg));
+
 		quit.setOnAction(e -> System.exit(0));
 
 		// hiasan doang
-		HBox.setMargin(restartLevel, new Insets(0, 0, 0, 5));
-		HBox.setMargin(quit, new Insets(0, 0, 0, 5));
-		HBox.setMargin(moves, new Insets(0, 0, 0, 15));
-		HBox.setMargin(level, new Insets(0, 0, 0, 143));
+		HBox.setMargin(quit, new Insets(0, 0, 0, 88));
+		HBox.setMargin(newGame, new Insets(0, 0, 0, 39));
+		HBox.setMargin(moves, new Insets(0, 0, 0, 60));
 		top.setPadding(new Insets(10, 0, 5, 11));
 		VBox.setMargin(grid, new Insets(5, 0, 0, 50));
 
-		top.getChildren().addAll(newGame, restartLevel, quit);
-		stats.getChildren().addAll(moves, level);
+		top.getChildren().addAll(newGame, quit);
+		stats.getChildren().addAll(moves);
 		root.getChildren().addAll(top, stats, grid);
-		Scene scene = new Scene(root, 325, 350);
+		Scene scene = new Scene(root, 340, 400);
 
 		primaryStage.setTitle("Fifteen Puzzle");
 		primaryStage.setResizable(false);
@@ -96,17 +82,22 @@ public class App extends Application {
 		if(lg.getBlankX() > x){
 			lg.moveUp();
 			GeneratePuzzle(arr, lg);
+			
 		}else if(lg.getBlankX() < x){
 			lg.moveDown();
 			GeneratePuzzle(arr, lg);
+			
 		}else if(lg.getBlankY() > y){
 			lg.moveLeft();
 			GeneratePuzzle(arr, lg);
+			
 		}
 		else if(lg.getBlankY() < y){
 			lg.moveRight();
 			GeneratePuzzle(arr, lg);
+			
 		}
+		
 
 	}
 
@@ -114,7 +105,6 @@ public class App extends Application {
 		win = false;
 		moves.setText("Moves: 0");
 		nMoves = 1;
-		level.setText("Level: " + Integer.toString(lvl));
 
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j < 4; j++) {
@@ -132,7 +122,7 @@ public class App extends Application {
 				arr[i][j].setOnAction(e -> Slide(arr, lg, x, y));
 			}
 		}
-		Check(lg, arr);
+		
 	}
 
 	void Check(Logic lg, Button[][] arr) {
@@ -150,15 +140,7 @@ public class App extends Application {
 
 		Label finish = new Label("Successful");
 
-		Button nextLevel = new Button("Next Level");
-
 		Button quit = new Button("Quit");
-
-		nextLevel.setOnAction(e2 -> {
-			finishStage.close();
-			lvl++;
-			GeneratePuzzle(arr, lg);
-		});
 
 		quit.setOnAction(e -> System.exit(0));
 
@@ -166,12 +148,11 @@ public class App extends Application {
 
 		finishVBox.setAlignment(Pos.TOP_CENTER);
 		VBox.setMargin(finish, new Insets(10, 0, 0, 0));
-		VBox.setMargin(nextLevel, new Insets(10, 0, 0, 0));
 		VBox.setMargin(quit, new Insets(5, 0, 0, 0));
 
-		finishVBox.getChildren().addAll(finish, nextLevel, quit);
+		finishVBox.getChildren().addAll(finish, quit);
 		Scene finishScene = new Scene(finishVBox, 220, 110);
-		finishStage.setTitle("Level Completed");
+		finishStage.setTitle("Anda Menang !");
 		finishStage.setResizable(false);
 		finishStage.setAlwaysOnTop(true);
 		finishStage.setScene(finishScene);
