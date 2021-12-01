@@ -132,7 +132,7 @@ public class App extends Application {
 		Stage finishStage = new Stage();
 		VBox finishVBox = new VBox();
 
-		Label finish = new Label("Successful");
+		Label finish = new Label("You WIN!");
 
 		Button quit = new Button("Quit");
 
