@@ -28,7 +28,9 @@ Sprint kemarin pada method reset, check, dan isSolved masih belum jalan.
 ## Next Sprint Backlog (Sprint 3)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 3.1 | Implementasi Method Reset | Fikri | 
-| 3.2 | Implementasi Method Check | Daffa | 
-| 3.3 | Implementasi Method isSolved | Muaz | 
+| 3.1 | fix Method Reset | Fikri | 
+| 3.2 | fix Method Check | Daffa | 
+| 3.3 | fix Method isSolved | Muaz | 
+| 3.4 | buat uml | Daffa | 
+
 
