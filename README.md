@@ -30,8 +30,11 @@ Projek ini adalah projek dari mata kuliah praktikum PBO yang bertujuan untuk mem
    - Isi next Sprint backlog
 
 - **[Sprint 2](changelog/sprint-2.md) - (date from 24/11/2021 until 30/11/2021)** 
-   - Short changes 1
-   - Short changes 2
+   - Isi nama Kelompok 
+   - Isi Tanggal
+   - Isi Sprint Overview
+   - Isi Sprint 2 backlog
+   - Isi next Sprint backlog
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
    - Short changes 1
