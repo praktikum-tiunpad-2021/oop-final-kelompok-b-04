@@ -14,7 +14,6 @@ import javafx.geometry.Pos;
 public class App extends Application {
 	Label moves = new Label("Moves: 0");
 	int nMoves = 1;
-	static int puzzleSize = 4;
 
 	@Override
 	public void start(Stage primaryStage) {
@@ -24,7 +23,7 @@ public class App extends Application {
 
 		HBox top = new HBox();
 
-		Button newGame = new Button("Reset");
+		Button newGame = new Button("Restart");
 		newGame.setPrefHeight(30);
 		newGame.setPrefWidth(100);
 
@@ -50,7 +49,9 @@ public class App extends Application {
 		GeneratePuzzle(arr, lg);
 
 
-		newGame.setOnAction(e -> GeneratePuzzle(arr, lg));
+		newGame.setOnAction(e -> {
+			start(primaryStage);}
+		);
 
 		quit.setOnAction(e -> System.exit(0));
 
@@ -153,7 +154,7 @@ public class App extends Application {
 	}
 
 	public static void main(String[] args) {
-		puzzleSize = 4;
+		
 		launch(args);
 	}
 
