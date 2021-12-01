@@ -12,7 +12,6 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 
 public class App extends Application {
-	static boolean win = false;
 	Label moves = new Label("Moves: 0");
 	int nMoves = 1;
 	static int puzzleSize = 4;
@@ -102,8 +101,6 @@ public class App extends Application {
 	}
 
 	void GeneratePuzzle(Button arr[][], Logic lg) {
-		win = false;
-
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j < 4; j++) {
 				if (lg.getGridElem(i, j).intValue() == 0) {
@@ -131,8 +128,6 @@ public class App extends Application {
 	}
 
 	void Win(Button arr[][], Logic lg) {
-		win = true;
-
 		Stage finishStage = new Stage();
 		VBox finishVBox = new VBox();
 
@@ -150,7 +145,7 @@ public class App extends Application {
 
 		finishVBox.getChildren().addAll(finish, quit);
 		Scene finishScene = new Scene(finishVBox, 220, 110);
-		finishStage.setTitle("You win!");
+		finishStage.setTitle("You Win!");
 		finishStage.setResizable(false);
 		finishStage.setAlwaysOnTop(true);
 		finishStage.setScene(finishScene);
