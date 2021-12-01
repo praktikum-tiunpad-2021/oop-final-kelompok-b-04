@@ -27,13 +27,13 @@ public class App extends Application {
 
 		Button newGame = new Button("Reset");
 		newGame.setPrefHeight(30);
-		newGame.setPrefWidth(100);// 80
+		newGame.setPrefWidth(100);
 
 		Button quit = new Button("Quit");
 		quit.setPrefHeight(30);
-		quit.setPrefWidth(53);// 50
+		quit.setPrefWidth(53);
 
-		// grid
+		
 		HBox stats = new HBox();
 		GridPane grid = new GridPane();
 		Button arr[][] = new Button[4][4];
@@ -97,14 +97,12 @@ public class App extends Application {
 			GeneratePuzzle(arr, lg);
 			
 		}
-		
-
+		Check(lg, arr);
+	
 	}
 
 	void GeneratePuzzle(Button arr[][], Logic lg) {
 		win = false;
-		moves.setText("Moves: 0");
-		nMoves = 1;
 
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j < 4; j++) {
@@ -152,7 +150,7 @@ public class App extends Application {
 
 		finishVBox.getChildren().addAll(finish, quit);
 		Scene finishScene = new Scene(finishVBox, 220, 110);
-		finishStage.setTitle("Anda Menang !");
+		finishStage.setTitle("You win!");
 		finishStage.setResizable(false);
 		finishStage.setAlwaysOnTop(true);
 		finishStage.setScene(finishScene);
