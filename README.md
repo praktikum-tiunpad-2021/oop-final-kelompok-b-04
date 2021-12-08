@@ -39,9 +39,13 @@ Projek ini adalah projek dari mata kuliah praktikum PBO yang bertujuan untuk mem
    - Mengganti Next Sprint Backlog
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
-
+   - Isi nama Kelompok 
+   - Isi Tanggal
+   - Isi Sprint Overview
+   - Isi Sprint 2 backlog
+   - Isi next Sprint backlog
+   - Mengganti Sprint Backlog 2 Poin 1 sampai 2 
+  
 ## Running The App
 
 TO;DO with steps
