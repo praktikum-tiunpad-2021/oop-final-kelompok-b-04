@@ -48,13 +48,18 @@ Projek ini adalah projek dari mata kuliah praktikum PBO yang bertujuan untuk mem
   
 ## Running The App
 
-TO;DO with steps
+1. Untuk menjalankan project gunakan perintah :
+
+ ```
+ gradlew run 
+ ```
+2. Untuk menggerakkan tiles pada aplikasi, klik menggunakan mouse pada tiles yang bersebelahan dengan tiles yang kosong
 
 ## Classes Used
 
 TO;DO
 
-<img src="img/PBO.png" alt="UML" width="546" height="811">
+UML image here
 
 ## Notable Assumption and Design App Details
 
