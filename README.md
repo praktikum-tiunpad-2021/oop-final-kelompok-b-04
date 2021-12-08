@@ -54,7 +54,7 @@ TO;DO with steps
 
 TO;DO
 
-UML image here
+<img src="img/PBO.png" alt="UML" width="546" height="811">
 
 ## Notable Assumption and Design App Details
 
