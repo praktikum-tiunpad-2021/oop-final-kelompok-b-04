@@ -38,7 +38,7 @@ Projek ini adalah projek dari mata kuliah praktikum PBO yang bertujuan untuk mem
    - Mengganti Sprint Backlog 2 Poin 1 sampai 2 dan menambahkan Poin 3
    - Mengganti Next Sprint Backlog
    
-- **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
+- **[Sprint 3](changelog/sprint-3.md) - (From 01/12/2021 to 08/12/2021)** 
    - Isi nama Kelompok 
    - Isi Tanggal
    - Isi Sprint Overview
