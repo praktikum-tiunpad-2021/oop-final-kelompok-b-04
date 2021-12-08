@@ -50,7 +50,9 @@ public class App extends Application {
 
 
 		newGame.setOnAction(e -> {
-			start(primaryStage);}
+			start(primaryStage);
+			moves.setText("Moves: " + Integer.toString(0));
+			nMoves = 1;}
 		);
 
 		quit.setOnAction(e -> System.exit(0));
@@ -72,6 +74,7 @@ public class App extends Application {
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
+
 
 	void Slide(Button arr[][], Logic lg, int x, int y) {
 		// cek apa button yang diclick adjacent dengan button kosong ""
@@ -123,6 +126,7 @@ public class App extends Application {
 
 	void Check(Logic lg, Button[][] arr) {
 		moves.setText("Moves: " + Integer.toString(nMoves++));
+		lg.isSolved();
 		if (lg.isSolved()) {
 			Win(arr, lg);
 		}
@@ -137,8 +141,6 @@ public class App extends Application {
 		Button quit = new Button("Quit");
 
 		quit.setOnAction(e -> System.exit(0));
-
-		finishStage.setOnCloseRequest(e -> Win(arr, lg));
 
 		finishVBox.setAlignment(Pos.TOP_CENTER);
 		VBox.setMargin(finish, new Insets(10, 0, 0, 0));
