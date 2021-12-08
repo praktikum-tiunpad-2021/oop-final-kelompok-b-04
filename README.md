@@ -63,4 +63,4 @@ TO;DO
 
 ## Notable Assumption and Design App Details
 
-TO;DO
+design dari aplikasi fifteen game seharusnya bisa lebih diimprove lagi, selain itu interfacenya masih terbilang kurang
