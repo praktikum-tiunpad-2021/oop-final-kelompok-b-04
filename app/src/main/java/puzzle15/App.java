@@ -126,7 +126,6 @@ public class App extends Application {
 
 	void Check(Logic lg, Button[][] arr) {
 		moves.setText("Moves: " + Integer.toString(nMoves++));
-		lg.isSolved();
 		if (lg.isSolved()) {
 			Win(arr, lg);
 		}

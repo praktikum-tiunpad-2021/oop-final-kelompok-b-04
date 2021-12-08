@@ -92,7 +92,10 @@ public class Logic {
         }
         for (int i = 0; i < this.dimension; i++) {
             for (int j = 0; j < this.dimension; j++) {
-                if (this.grid.get(i).get(j).intValue() != (i * this.dimension) + j) {
+                if (this.grid.get(this.dimension - 1).get(this.dimension - 1).intValue() == 0) {
+                    return true;
+                }
+                if (this.grid.get(i).get(j).intValue() != (i * this.dimension) + j + 1) {
                     return false;
                 }
             }
