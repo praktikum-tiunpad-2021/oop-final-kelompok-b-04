@@ -59,7 +59,7 @@ Projek ini adalah projek dari mata kuliah praktikum PBO yang bertujuan untuk mem
 
 TO;DO
 
-UML image here
+<img src='img/PBO.png' width='546px' height='811'>
 
 ## Notable Assumption and Design App Details
 
